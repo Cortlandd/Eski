@@ -1,0 +1,177 @@
+﻿This file contains information that should be merged into the registry
+from a setup program, or copied into a .reg file and merged into the
+registry for your own personal testing. If you are using a Visual Studio
+Setup Project, then simply copy the file starting below the the "CUT HERE"
+line until the end, and save it to a file with the extension .reg. Then open 
+the Registry editor for your setup program, right click on the Registry editor 
+window, select Import and then browse to the .reg file you have created. All 
+the correct settings have been made and you do not need to make any further 
+modifications. To test these settings on your computer, save the contents of 
+this file to a .reg file like you would for a Setup project, but also search 
+for the value $RootFolder$ and replace it with the directory path containing 
+your program (using double backslashes "\\" as the delimiter). 
+After saving these changes, double-click on the .reg file and merge the changes
+into the registry.
+
+--------------------------------  CUT HERE  --------------------------------
+Windows Registry Editor Version 5.00
+
+[HKEY_CLASSES_ROOT\CLSID\{752cf1ac-a1e6-4f61-864b-61beaf675888}]
+@="Eski DTE Object"
+
+[HKEY_CLASSES_ROOT\CLSID\{752cf1ac-a1e6-4f61-864b-61beaf675888}\LocalServer32]
+@="$RootFolder$\\Eski.exe"
+
+[HKEY_CLASSES_ROOT\CLSID\{752cf1ac-a1e6-4f61-864b-61beaf675888}\ProgID]
+@="Eski.DTE.1.0"
+
+[HKEY_CLASSES_ROOT\CLSID\{752cf1ac-a1e6-4f61-864b-61beaf675888}\VersionIndependentProgID]
+@="Eski.DTE"
+
+[HKEY_CLASSES_ROOT\CLSID\{752cf1ac-a1e6-4f61-864b-61beaf675888}\Programmable]
+@=""
+
+[HKEY_CLASSES_ROOT\CLSID\{752cf1ac-a1e6-4f61-864b-61beaf675888}\TypeLib]
+@="{80cc9f66-e7d8-4ddd-85b6-d9e6cd0e93e2}"
+
+[HKEY_CLASSES_ROOT\CLSID\{752cf1ac-a1e6-4f61-864b-61beaf675888}\DefaultIcon]
+@="$RootFolder$\\Eski.exe,1200"
+
+[HKEY_CLASSES_ROOT\CLSID\{752cf1ac-a1e6-4f61-864b-61beaf675888}\Version]
+@="1.0"
+
+[HKEY_CLASSES_ROOT\CLSID\{4345ead4-8d58-47b9-95de-31beb9a8909f}]
+@="Eski Solution Object"
+
+[HKEY_CLASSES_ROOT\CLSID\{4345ead4-8d58-47b9-95de-31beb9a8909f}\LocalServer32]
+@="$RootFolder$\\Eski.exe"
+
+[HKEY_CLASSES_ROOT\CLSID\{4345ead4-8d58-47b9-95de-31beb9a8909f}\ProgID]
+@="Eski.Solution.1.0"
+
+[HKEY_CLASSES_ROOT\CLSID\{4345ead4-8d58-47b9-95de-31beb9a8909f}\VersionIndependentProgID]
+@="Eski.Solution"
+
+[HKEY_CLASSES_ROOT\CLSID\{4345ead4-8d58-47b9-95de-31beb9a8909f}\Programmable]
+@=""
+
+[HKEY_CLASSES_ROOT\CLSID\{4345ead4-8d58-47b9-95de-31beb9a8909f}\TypeLib]
+@="{80cc9f66-e7d8-4ddd-85b6-d9e6cd0e93e2}"
+
+[HKEY_CLASSES_ROOT\CLSID\{4345ead4-8d58-47b9-95de-31beb9a8909f}\DefaultIcon]
+@="$RootFolder$\\Eski.exe,1200"
+
+[HKEY_CLASSES_ROOT\CLSID\{4345ead4-8d58-47b9-95de-31beb9a8909f}\Version]
+@="1.0"
+
+[HKEY_CLASSES_ROOT\Eski.DTE.1.0]
+@="Eski DTE Object"
+
+[HKEY_CLASSES_ROOT\Eski.DTE.1.0\CLSID]
+@="{752cf1ac-a1e6-4f61-864b-61beaf675888}"
+
+[HKEY_CLASSES_ROOT\Eski.Solution.1.0]
+@="Eski Solution Object"
+
+[HKEY_CLASSES_ROOT\Eski.Solution.1.0\CLSID]
+@="{4345ead4-8d58-47b9-95de-31beb9a8909f}"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\AppEnv\14.0\Apps\Eski_1.0]
+"StubExePath"="$RootFolder$\\Eski.exe"
+"AppName"="Eski"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\Eski.exe]
+@="$RootFolder$\\Eski.exe"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\MAIN\FeatureControl\FEATURE_ENABLE_SCRIPT_PASTE_URLACTION_IF_PROMPT]
+"Eski.exe"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\MAIN\FeatureControl\FEATURE_LOCALMACHINE_LOCKDOWN]
+"Eski.exe"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\MAIN\FeatureControl\FEATURE_RESTRICT_ABOUT_PROTOCOL_IE7]
+"Eski.exe"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\MAIN\FeatureControl\FEATURE_BLOCK_CROSS_PROTOCOL_FILE_NAVIGATION]
+"Eski.exe"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\MAIN\FeatureControl\FEATURE_IFRAME_MAILTO_THRESHOLD]
+"Eski.exe"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\MAIN\FeatureControl\FEATURE_SCRIPTURL_MITIGATION]
+"Eski.exe"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\MAIN\FeatureControl\FEATURE_SHOW_APP_PROTOCOL_WARN_DIALOG]
+"Eski.exe"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\MAIN\FeatureControl\FEATURE_VIEWLINKEDWEBOC_IS_UNSAFE]
+"Eski.exe"=dword:00000001
+
+; Uncomment the entries below if you want to register a source file extension to work with Dynamic Data Exchange (DDE)
+
+;[HKEY_CLASSES_ROOT\Applications\Eski.exe]
+
+;[HKEY_CLASSES_ROOT\Applications\Eski.exe\shell]
+
+;[HKEY_CLASSES_ROOT\Applications\Eski.exe\shell\Open]
+
+;[HKEY_CLASSES_ROOT\Applications\Eski.exe\shell\Open\ddeexec]
+;@="Open(\"%1\")"
+
+;[HKEY_CLASSES_ROOT\Applications\Eski.exe\shell\Open\ddeexec\Application]
+;@="Eski.1.0"
+
+;[HKEY_CLASSES_ROOT\Applications\Eski.exe\shell\Open\ddeexec\Topic]
+;@="system"
+
+;[HKEY_CLASSES_ROOT\Applications\Eski.exe\shell\edit]
+
+;[HKEY_CLASSES_ROOT\Applications\Eski.exe\shell\edit\Command]
+;@="\"$RootFolder$\\Eski.exe\" /dde"
+
+;[HKEY_CLASSES_ROOT\Applications\Eski.exe\shell\edit\ddeexec]
+;@="Open(\"%1\")"
+
+;[HKEY_CLASSES_ROOT\Applications\Eski.exe\shell\edit\ddeexec\Application]
+;@="Eski.1.0"
+
+;[HKEY_CLASSES_ROOT\Applications\Eski.exe\shell\edit\ddeexec\Topic]
+;@="system"
+
+;[HKEY_CLASSES_ROOT\.Eski_ext]
+;@="Eski.Eski_ext.1.0"
+
+;[HKEY_CLASSES_ROOT\Eski.Eski_ext.1.0]
+;"AlwaysShowExt"="1"
+;@="Eski Source file"
+
+;[HKEY_CLASSES_ROOT\Eski.Eski_ext.1.0\DefaultIcon]
+;@="$RootFolder$\\Eski.exe,1200"
+
+;[HKEY_CLASSES_ROOT\Eski.Eski_ext.1.0\shell]
+
+;[HKEY_CLASSES_ROOT\Eski.Eski_ext.1.0\shell\Open]
+
+;[HKEY_CLASSES_ROOT\Eski.Eski_ext.1.0\shell\Open\Command]
+;@="\"$RootFolder$\\Eski.exe\" /dde"
+
+;[HKEY_CLASSES_ROOT\Eski.Eski_ext.1.0\shell\Open\ddeexec]
+;@="Open(\"%1\")"
+
+;[HKEY_CLASSES_ROOT\Eski.Eski_ext.1.0\shell\Open\ddeexec\Application]
+;@="Eski.1.0"
+
+;[HKEY_CLASSES_ROOT\Eski.Eski_ext.1.0\shell\Open\ddeexec\Topic]
+;@="system"
+
+; Uncomment the entries below if you want to register your program for participation in Set Default Programs
+; for the file extension defined above.
+
+;[HKEY_LOCAL_MACHINE\SOFTWARE\RegisteredApplications]
+;"Eski.1.0"="SOFTWARE\\Microsoft\\Eski\\1.0\\Capabilities"
+
+;[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Eski\1.0\Capabilities]
+;"ApplicationDescription"="Description of Eski"
+
+;[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Eski\1.0\Capabilities\FileAssociations]
+;".Eski_ext"="Eski.Eski_ext.1.0"

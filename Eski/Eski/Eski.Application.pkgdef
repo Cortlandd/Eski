@@ -1,0 +1,94 @@
+﻿[$RootKey$]
+"InstallDir"="$RootFolder$"
+"ShellFolder"="$ShellFolder$"
+"ThisVersionDTECLSID"="{752cf1ac-a1e6-4f61-864b-61beaf675888}"
+"ThisVersionSolutionCLSID"="{4345ead4-8d58-47b9-95de-31beb9a8909f}"
+"SplashScreenBitmap"="$RootFolder$\Splash.bmp"
+"AppName"="Eski"
+"AppIcon"="$RootFolder$\ApplicationIcon.ico"
+"ProductVersion"="1.0"
+"CommandLineLogo"="My Company Eski Version 1.0"
+"UserFilesSubFolderName"="Eski"
+"NewProjDlgSlnTreeNodeTitle"="Eski Solution"
+"NewProjDlgInstalledTemplatesHdr"="Eski installed templates"
+"HideMiscellaneousFilesByDefault"=dword:00000000
+"AddinsAllowed"=dword:00000001
+"DisableOutputWindow"=dword:00000000
+"AllowsDroppedFilesOnMainWindow"=dword:00000001
+"DefaultSearchPage"="https://www.bing.com"
+"DefaultHomePage"="http://www.My Company.com"
+"HideSolutionConcept"=dword:00000000
+"DefaultDebugEngine"="{00000000-0000-0000-0000-000000000000}"
+"UserOptsFileExt"="Eski_suo"
+"SolutionFileExt"="Eski_sln"
+"DefaultUserFilesFolderRoot"="Eski"
+"SolutionFileCreatorIdentifier"="Eski Solution File, Format Version 11.00"
+"DefaultProjectsLocation"="$MyDocuments$\Eski"
+"AppLocalizationPackage"="{67dad3d2-a2a1-4d82-a30c-3eb5eb007a3d}"
+"DDEApplication"="Eski.1.0"
+// set ShowHierarchyRootInTitle to dword:00000000 to omit the project name from the main window title
+"ShowHierarchyRootInTitle"=dword:00000001
+
+// Auto recovery is disable by default. Uncomment the following to enable auto recovery feature.
+//"UseAutoRecovery"=dword:00000001
+
+// Startpage is disabled by default. Uncomment the following to enable start page feature.
+// Please note one need to also specify a Start Page "Uri" under "[$RootKey$\StartPage\Default]" and
+// comment out No_ShellPkg_StartPageCommand in the UI project's vsct file.
+//"DisableStartPage"=dword:00000000
+
+// Samples in the New Project Dialog are disabled by default. Uncomment the following to 
+// enable the samples feature in the New Project Dialog.
+//"EnableSamples"=dword:00000001
+
+// Support for Microsoft supplied extension galleries is disabled by default. Uncomment the following to 
+// enable Microsoft-supplied extension galleries in the Extension Manager dialog.
+//"EnableMicrosoftGalleries"=dword:00000001
+
+// Support for end-user customization of extension galleries is disabled by default.
+// Uncomment the following to enable end-user customization of extension galleries
+// that appear in the Extension Manager dialog.
+//"EnablePrivateGalleries"=dword:00000001
+
+// If you enable a Start Page, specify the Uri of the loose or compiled Start Page XAML file.
+//[$RootKey$\StartPage\Default]
+//"Uri"="$RootFolder$\StartPage.xaml"
+
+//If you have a directory containing assemblies that need to be loaded, but not added
+//  to the probing path of the .config file, then you can add those here. Simply uncomment
+//  then add your directories to this key, and the AppDomain manager will look for your
+//  assemblies under the paths given.
+//[$RootKey$\BindingPaths\{67dad3d2-a2a1-4d82-a30c-3eb5eb007a3d}]
+//"$RootFolder$"=""
+//"C:\Directory1"=""
+//"C:\Directory2"=""
+
+[$RootKey$\Menus]
+"{67dad3d2-a2a1-4d82-a30c-3eb5eb007a3d}"=", 1000, 1"
+
+[$RootKey$\Profile]
+"DefaultVsProfile"="$RootFolder$\Profiles\General.vssettings"
+
+[$RootKey$\Packages\{67dad3d2-a2a1-4d82-a30c-3eb5eb007a3d}]
+"Inprocserver32"="$RootFolder$\Eski.exe"
+
+[$RootKey$\Packages\{67dad3d2-a2a1-4d82-a30c-3eb5eb007a3d}\SatelliteDll]
+"DllName"="Eskiui.dll"
+"Path"="$RootFolder$"
+
+// Create local VS template location
+[$RootKey$\VSTemplate\Item]
+"UserFolder"="$RootFolder$\ItemTemplates"
+"CacheFolder"="$RootFolder$\ItemTemplatesCache"
+
+[$RootKey$\VSTemplate\Project]
+"UserFolder"="$RootFolder$\ProjectTemplates"
+"CacheFolder"="$RootFolder$\ProjectTemplatesCache"
+
+// Disable the online template tab and the framework dropdown in the new project and item dialog.
+[$RootKey$\NewProjectDialog]
+"DisableOnlineTemplates"=dword:00000001
+"HideFrameworkSelection"=dword:00000001
+
+
+
